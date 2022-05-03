@@ -9,6 +9,7 @@ import re
 import glob
 
 #Using Tesseract to extract the information form the files
+#lookang need to install https://github.com/UB-Mannheim/tesseract/wiki tesseract-ocr-w64-setup-v5.0.1.20220118.exe (64 bit) resp.
 def get_text_from_image(filename):
     pytesseract.pytesseract.tesseract_cmd = 'C:/Program Files/Tesseract-OCR/tesseract.exe'
     try:
